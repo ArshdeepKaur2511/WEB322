@@ -6,9 +6,9 @@
 * 
 *  https://www.senecacollege.ca/about/policies/academic-integrity-policy.html
 * 
-*  Name: Arshdeep Kaur Student ID: 139566228 Date: February 20,2024
-*  Link https://busy-lime-hedgehog-sock.cyclic.app/
-*  Github repo https://github.com/ArshdeepKaur2511/Web322
+*  Name: Arshdeep Kaur Student ID: 139566228 Date: April 23,2024
+*  Link https://web322-bzmx.onrender.com
+
 ********************************************************************************/
 const legoData = require("./modules/legoSets");
 const express = require('express');
