@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -444,177 +444,59 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Custom properties for light mode */
 :root {
-  color-scheme: light;
-  --pf: 296 83% 18%;
-  --sf: 200 100% 30%;
-  --af: 31 94% 44%;
-  --nf: 215 28% 10%;
-  --b2: 0 0% 93%;
-  --b3: 0 0% 86%;
-  --in: 198 93% 60%;
-  --su: 158 64% 52%;
-  --wa: 43 96% 56%;
-  --er: 0 91% 71%;
-  --pc: 302 27% 85%;
-  --sc: 212 51% 90%;
-  --ac: 28 57% 12%;
-  --nc: 218 6% 82%;
-  --inc: 198 100% 12%;
-  --suc: 158 100% 10%;
-  --wac: 43 100% 11%;
-  --erc: 0 100% 14%;
-  --rounded-box: 1rem;
-  --rounded-btn: 0.5rem;
-  --rounded-badge: 1.9rem;
-  --animation-btn: 0.25s;
-  --animation-input: .2s;
-  --btn-text-case: uppercase;
-  --btn-focus-scale: 0.95;
-  --border-btn: 1px;
-  --tab-border: 1px;
-  --tab-radius: 0.5rem;
-  --p: 296 83% 25%;
-  --s: 200 100% 37%;
-  --a: 31 94% 51%;
-  --n: 215 28% 17%;
-  --b1: 0 0% 100%;
-  --bc: 215 28% 17%;
+  --bg-color: hsl(215, 18%, 38%);
+  --text-color: hsl(215 28% 70%);
+  --primary-color: hsl(200, 53%, 40%);
+  --secondary-color: hsl(212 51% 90%);
+  --accent-color: hsl(28 57% 12%);
+  --error-color: hsl(0 91% 71%);
+  --border-color: hsl(215 28% 60%);
 }
 
-*, ::before, ::after {
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
-}
-
-::backdrop {
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
-}
-
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
+/* Custom properties for dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: hsl(214, 35%, 35%);
+    --text-color: hsl(210, 4%, 78%);
+    --primary-color: hsl(296 83% 18%);
+    --secondary-color: hsl(212 51% 90%);
+    --accent-color: hsl(302 27% 85%);
+    --error-color: hsl(0 91% 71%);
+    --border-color: hsl(215 28% 17%);
   }
 }
 
+/* Media query for phones */
+@media (max-width: 767px) {
+  /* Apply mobile-specific styles here */
+}
+
+/* Media query for laptops */
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+  /* Apply laptop-specific styles here */
 }
 
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
+/* Base styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
+/* Example usage of custom properties */
+.btn {
+  background-color: var(--primary-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
 }
 
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
+.alert {
+  background-color: var(--secondary-color);
+  border-color: var(--border-color);
 }
+
+
 
 .prose {
   color: var(--tw-prose-body);
@@ -1269,7 +1151,6 @@ html {
   --tw-content: attr(aria-label);
   content: var(--tw-content);
 }
-
 .card {
   position: relative;
   display: flex;
@@ -1339,6 +1220,7 @@ html {
   --tw-text-opacity: 1;
   color: hsl(var(--nc) / var(--tw-text-opacity));
 }
+
 
 .dropdown {
   position: relative;
@@ -1655,19 +1537,31 @@ html {
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  padding: var(--navbar-padding, 0.5rem);
-  min-height: 4rem;
-  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-bottom: 1px solid var(--secondary-color);
 }
 
-:where(.navbar > *) {
-  display: inline-flex;
-  align-items: center;
+.navbar a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.25s ease;
 }
 
-.navbar-center {
-  flex-shrink: 0;
+.navbar a:hover {
+  background-color: var(--accent-color);
+}
+
+.navbar a.active,
+.navbar a:focus,
+.navbar a:hover {
+  color: white;
 }
 
 .select {
@@ -1986,7 +1880,7 @@ html {
 }
 
 .card.compact .card-body {
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
@@ -1995,7 +1889,7 @@ html {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.75rem;
   font-weight: 600;
 }
@@ -2018,6 +1912,7 @@ html {
     background-position-y: 0;
   }
 }
+
 
 .dropdown.dropdown-open .dropdown-content,
 .dropdown:focus .dropdown-content,
@@ -2550,6 +2445,12 @@ html {
   line-height: 1.25rem;
 }
 
+.card-compact .card-body {
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .card-compact .card-title {
   margin-bottom: 0.25rem;
 }
@@ -2563,7 +2464,6 @@ html {
 .card-normal .card-title {
   margin-bottom: 0.75rem;
 }
-
 .menu-horizontal > li:not(.menu-title) > details > ul {
   margin-left: 0px;
   margin-top: 1rem;
@@ -2677,9 +2577,11 @@ html {
 }
 
 .w-full {
+  width: 50%;
+}
+.w-about{
   width: 100%;
 }
-
 .max-w-md {
   max-width: 28rem;
 }
@@ -2803,6 +2705,11 @@ html {
   padding-right: 0.25rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2816,6 +2723,10 @@ html {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
